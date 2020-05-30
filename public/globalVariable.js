@@ -1,0 +1,10 @@
+const display = document.querySelector('#display table');
+const form = document.querySelector('form');
+const btnSubmit = document.querySelector('#submit');
+const btnShowAvg = document.querySelector('#showAVG');
+const btnShowPro = document.querySelector('#showPro');
+const inputName = document.querySelector('#name');
+const inputMath = document.querySelector('#mathScore');
+const inputPhysical = document.querySelector('#physicalScore');
+const inputChemistry = document.querySelector('#chemistryScore');
+const arrInput = [inputName, inputChemistry, inputMath, inputPhysical];

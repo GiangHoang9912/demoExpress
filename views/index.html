@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student</title>
+  <link rel="stylesheet" href="./index.css" />
+</head>
+
+<body>
+  <form action="http://localhost:3000">
+    <div class="container">
+      <div class="inputData">
+        <h5>Name :</h5>
+        <input id="name" type="text" placeholder="Student Name" required />
+        <h5>Maths :</h5>
+        <input id="mathScore" type="number" placeholder="Maths Score" min="0" max="10" required />
+
+        <h5>Physical :</h5>
+        <input id="physicalScore" type="number" placeholder="Physical Score" min="0" max="10" required />
+
+        <h5>Chemistry :</h5>
+        <input id="chemistryScore" type="number" placeholder="Chemistry Score" min="0" max="10" required />
+
+        <div class="btn">
+          <button id="submit" type="submit">Submit</button>
+        </div>
+      </div>
+  </form>
+  <div id="display" class="showStudent">
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Math</th>
+        <th>Physical</th>
+        <th>Chemistry</th>
+        <th>Average</th>
+        <th>Edit</th>
+        <th>Delete</th>
+        <th>Show</th>
+      </tr>
+    </table>
+    <div class="showBtn">
+      <button id="showAVG">Show AVG</button>
+      <button id="showPro">Show Tiến</button>
+    </div>
+  </div>
+  </div>
+
+  <script src="./globalVariable.js"></script>
+  <script type="module" src="./script.js"></script>
+</body>
+
+</html>
