@@ -4,6 +4,7 @@ import Student from './student.js';
 import express from 'express';
 import * as dbContext from './dbContext.js';
 import path from "path";
+import cors from 'cors'
 
 const __dirname = process.cwd();
 const app = express();
@@ -12,6 +13,7 @@ const PORT = 3000;
 app.use(express.static('./public'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(cors());
 
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, './views/index.html'));
