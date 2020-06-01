@@ -7,6 +7,10 @@ db.loadDatabase();
 function findStudentById(res, id) {
   id = id.replace(":", '')
   db.find({ _id: id }, (err, data) => {
+    if(data.length === 0){
+      res.sendStatus(404)
+      res.end();
+    }
     res.json(data);
     res.end();
   });
